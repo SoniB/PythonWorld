@@ -1,0 +1,20 @@
+'''
+quandl(quandl.com)
+
+Its a large repository of datasets having various ways to import datasets
+(download,api,api key etc)
+
+save quandl api_key from login into notepad, save notepad file as
+quandlapikey.txt in local dir 
+You can get quandl API key from your quandl login
+'''
+
+import quandl
+import pandas as pd
+
+# Not necessary, Its just used so that API key is not displayed.
+api_key = open('quandlapikey.txt','r').read()
+
+df = quandl.get("FMAC/HPI_TX", authtoken=api_key)
+
+print(df.head())
