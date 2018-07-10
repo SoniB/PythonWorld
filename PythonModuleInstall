@@ -1,0 +1,29 @@
+
+#Installing modules on windows:
+A.Normal install-
+steps:
+1.Download package(source it from web)
+2.Copy to packages folder(where all modules are present)(or not doesnt matter),unzip if needed
+3.Point on package folder hold shift+rt click>>open command window here
+4.Enter setup.py install
+
+B.pip install:
+steps:
+1.cmd
+2.pip install <packagename>
+or
+c:/python36/scripts/pip install <packagename>
+#to upgrade:c:/python36/scripts/pip install --upgrade <packagename>
+or
+download package(http://www.lfd.uci.edu/~gohlke/pythonlibs/)
+point on package folder shift+rt click>>open command window here
+c:/python36/scripts/pip install "<filename.whl>"
+
+#upgrading pip
+1.cmd
+2.python -m pip install --upgrade pip
+
+C.Using easy install
+steps:
+1.cmd
+2.easy_install <packagename>
